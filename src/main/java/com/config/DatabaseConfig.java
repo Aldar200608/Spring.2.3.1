@@ -21,9 +21,9 @@ public class DatabaseConfig {
     @Bean
     public DataSource dataSource() {
         HikariDataSource dataSource = new HikariDataSource();
-        dataSource.setJdbcUrl("jdbc:postgresql://localhost:5432/postgres");
+        dataSource.setJdbcUrl("jdbc:postgresql://localhost:5432/my_database");
         dataSource.setUsername("postgres");
-        dataSource.setPassword("password");
+        dataSource.setPassword("Radlasand_200608");
         dataSource.setDriverClassName("org.postgresql.Driver");
         return dataSource;
     }
